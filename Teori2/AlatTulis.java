@@ -40,4 +40,12 @@ public class AlatTulis {
     public int getHargaTotal() {
         return this.hargaTotal;
     }
+
+    public static int totalHargaSemuaBarang(AlatTulis... items) {
+        int totalSemua = 0;
+        for (AlatTulis item : items) {
+            totalSemua += item.getHargaTotal();
+        }
+        return totalSemua;
+    }
 }

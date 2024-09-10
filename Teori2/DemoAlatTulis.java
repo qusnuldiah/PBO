@@ -31,7 +31,7 @@ public class DemoAlatTulis {
         System.out.println("_____________________________________________________________________");
 
         // Hitung total harga
-        int totalSemua = bolpoint.getHargaTotal() + pensil.getHargaTotal() + penghapus.getHargaTotal();
+        int totalSemua = AlatTulis.totalHargaSemuaBarang(bolpoint, pensil, penghapus);
         System.out.println("Total Harga Semua Barang: Rp. " + totalSemua);
         System.out.println("_____________________________________________________________________");
     }
