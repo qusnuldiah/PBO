@@ -1,11 +1,11 @@
 package Teori04;
 
-public class Mobil {
+public class Sopir {
     private String nama;
     private int biaya;
 
-    // Konstruktor 
-    public Mobil(String nama, int biaya) {
+    // Konstruktor
+    public Sopir(String nama, int biaya) {
         this.nama = nama;
         this.biaya = biaya;
     }
@@ -26,8 +26,8 @@ public class Mobil {
         return this.biaya;
     }
 
-    // Menghitung total biaya sewa mobil berdasarkan jumlah hari
-    public int hitungBiayaMobil(int hari) {
+    // Menghitung total biaya jasa sopir berdasarkan jumlah hari
+    public int hitungBiayaSopir(int hari) {
         return this.biaya * hari;
     }
 }
