@@ -1,16 +1,16 @@
 package Tugas2;
 
-public class Becak extends Kendaraan {
+public class Motor extends Kendaraan {
     String warna;
 
-    public Becak(int kecepatan, String warna) {
+    public Motor(int kecepatan, String warna) {
         super(kecepatan);
         this.warna = warna;
     }
 
-    public void tampilkanInfoBecak() {
+    public void tampilkanInfoMotor() {
         System.out.println("==============================");
-        System.out.println("Informasi Becak:");
+        System.out.println("Informasi Motor:");
         tampilkanInfo();
         System.out.printf("Warna: %s%n", warna);
         System.out.println("______________________________");
