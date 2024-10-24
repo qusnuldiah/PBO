@@ -1,8 +1,8 @@
 package UTS;
 
 public class PemegangSaham extends Manajer {
-    private int deviden;
-    private int jumSaham;
+    public int deviden;
+    public int jumSaham;
 
     public void setDeviden(int deviden) {
         this.deviden = deviden;
