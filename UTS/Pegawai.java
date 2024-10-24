@@ -31,8 +31,8 @@ public class Pegawai {
 
     // Menampilkan Data Pokok Pegawai
     public void tampilDataPokokPegawai() {
-        System.out.printf("%-20s: %s\n", "No Induk", getNoIndukPegawai());
-        System.out.printf("%-20s: %s\n", "Nama", getNama());
-        System.out.printf("%-20s: %d\n", "Gaji Pokok", getGaji());
+        System.out.printf("%-25s: %s\n", "No Induk", getNoIndukPegawai());
+        System.out.printf("%-25s: %s\n", "Nama", getNama());
+        System.out.printf("%-25s: %d\n", "Gaji Pokok", getGaji());
     }
 }

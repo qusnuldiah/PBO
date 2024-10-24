@@ -1,6 +1,6 @@
 package UTS;
 
-public class PemegangSaham extends Pegawai {
+public class PemegangSaham extends Manajer {
     private int deviden;
     private int jumSaham;
 
@@ -24,9 +24,13 @@ public class PemegangSaham extends Pegawai {
     public void tampilDataPemegangSaham() {
         System.out.println("======== Data Pemegang Saham ========");
         tampilDataPokokPegawai();
-        System.out.printf("%-20s: %d\n", "Deviden", getDeviden());
-        System.out.printf("%-20s: %d\n", "Jumlah Saham", getJumSaham());
-        System.out.printf("%-20s: %d\n", "Total Gaji", (getGaji() + getDeviden()));
+        System.out.printf("%-25s: %d\n", "Tunjangan Jabatan", getTunjanganJabatan());
+        int totalGajiDenganTunjangan = getGaji() + getTunjanganJabatan();
+        System.out.printf("%-25s: %d\n", "Total Gaji", totalGajiDenganTunjangan);
+        System.out.printf("%-25s: %d\n", "Deviden", getDeviden());
+        System.out.printf("%-25s: %d\n", "Jumlah Saham", getJumSaham());
+        int totalGajiDenganDeviden = totalGajiDenganTunjangan + getDeviden();
+        System.out.printf("%-25s: %d\n", "Total Gaji dengan Deviden", totalGajiDenganDeviden);
     }
 }
 

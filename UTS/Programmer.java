@@ -15,8 +15,8 @@ public class Programmer extends Pegawai {
     public void tampilDataProgrammer() {
         System.out.println("======== Data Programmer ========");
         tampilDataPokokPegawai();
-        System.out.printf("%-20s: %d\n", "Bonus", getBonus());
-        System.out.printf("%-20s: %d\n", "Total Gaji", (getGaji() + getBonus()));
+        System.out.printf("%-25s: %d\n", "Bonus", getBonus());
+        System.out.printf("%-25s: %d\n", "Total Gaji", (getGaji() + getBonus()));
     }
 }
 

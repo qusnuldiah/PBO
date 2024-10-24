@@ -15,8 +15,8 @@ public class Manajer extends Pegawai {
     public void tampilDataManajer() {
         System.out.println("======== Data Manajer ========");
         tampilDataPokokPegawai();
-        System.out.printf("%-20s: %d\n", "Tunjangan Jabatan", getTunjanganJabatan());
-        System.out.printf("%-20s: %d\n", "Total Gaji", (getGaji() + getTunjanganJabatan()));
+        System.out.printf("%-25s: %d\n", "Tunjangan Jabatan", getTunjanganJabatan());
+        System.out.printf("%-25s: %d\n", "Total Gaji", (getGaji() + getTunjanganJabatan()));
     }
 }
 
